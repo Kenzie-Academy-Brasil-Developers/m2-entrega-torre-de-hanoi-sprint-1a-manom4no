@@ -8,10 +8,13 @@ function towerCreation (){
 
     let towerRodZero = document.createElement('ul');
     towerRodZero.setAttribute('class', 'towerRodZero');
+    towerRodZero.setAttribute('id','coluna1')
     let towerRodOne = document.createElement('ul');
     towerRodOne.setAttribute('class', 'towerRodOne');
+    towerRodOne.setAttribute('id', 'coluna2')
     let towerRodTwo = document.createElement('ul');
     towerRodTwo.setAttribute('class', 'towerRodTwo');
+    towerRodTwo.setAttribute('id', 'coluna3')
 
     //linhas
 
