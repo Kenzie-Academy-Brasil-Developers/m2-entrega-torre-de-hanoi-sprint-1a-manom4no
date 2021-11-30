@@ -3,6 +3,7 @@
 let towerContainer = document.createElement('div');
 towerContainer.setAttribute('class', 'towerContainer');
 
+
 //colunas
 
 let towerRodZero = document.createElement('ul');
@@ -38,7 +39,7 @@ liThree.setAttribute('id','disco4');
 function towerCreation (){
 
 
-    //estrutura
+function towerCreation (){
     towerRodZero.appendChild(liZero);
     towerRodZero.appendChild(liOne);
     towerRodZero.appendChild(liTwo);
@@ -61,4 +62,8 @@ let lastButtonTwo = towerRodTwo.lastElementChild;
 function firstButton(event){
     console.log(event.target)
     console.log(event.currentTarget)
+
+    function sequestrar(evt){
+
+
 }
