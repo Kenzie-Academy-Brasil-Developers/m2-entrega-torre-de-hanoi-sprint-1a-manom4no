@@ -1,5 +1,4 @@
-function towerCreation (){
-    //container
+//container
 
     let towerContainer = document.createElement('div');
     towerContainer.setAttribute('class', 'towerContainer');
@@ -24,7 +23,7 @@ function towerCreation (){
     let liThree = document.createElement('li');
     liThree.setAttribute('class','liThree');
 
-    //estrutura
+function towerCreation (){
     towerRodZero.appendChild(liZero);
     towerRodZero.appendChild(liOne);
     towerRodZero.appendChild(liTwo);
@@ -38,21 +37,7 @@ function towerCreation (){
 }
 towerCreation()
 
-function firstButton(){
-    
-}
-function secondButton(){
-    
-}
-function thirdButton(){
-    
-}
-function fourthButton(){
-    
-}
-function fifthButton(){
-    
-}
-function sixthButton(){
-    
+
+function sequestrar(evt){
+
 }
