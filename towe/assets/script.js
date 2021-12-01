@@ -95,6 +95,10 @@ function addShaoKhan(){
     let buttonDificulty = document.getElementById('dificuldade');
     buttonDificulty.setAttribute('class','buttonDificulty');
     buttonDificulty.addEventListener('click',function(evt){
+        towerRodZero.appendChild(liZero);
+        towerRodZero.appendChild(liOne);
+        towerRodZero.appendChild(liTwo);
+        towerRodZero.appendChild(liThree);
         towerRodZero.appendChild(liFour);    
         }
     )
