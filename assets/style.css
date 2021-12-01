@@ -1,17 +1,21 @@
+body{
+    background-image: url('midia/mk3-stage-temple.gif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 /*estrutura*/
 .towerContainer{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 200px;
-    background-color: rgb(241, 81, 81);
 }
 /*colunas*/
 .towerRodZero {
     height: 300px;
     width: 33%;
-    background-color: brown;
+    background-color: rgba(226, 226, 226, 0.521);
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -20,7 +24,7 @@
 .towerRodOne {
     height: 300px;
     width: 33%;
-    background-color: grey;
+    background-color: rgba(226, 226, 226, 0.521);
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -29,7 +33,7 @@
 .towerRodTwo {
     height: 300px;
     width: 33%;
-    background-color: yellow;
+    background-color: rgba(226, 226, 226, 0.521);
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -78,3 +82,24 @@ li{
     justify-content: space-around;
 }
 
+/*footer*/
+.footer{
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+.scorpion,.sub-zero{
+    height: 300px;   
+}
+.sub-zero{
+    transform: rotateY(180deg);
+}
+/*header*/
+header{
+    display: flex;
+    justify-content: space-around;
+    height: 5vw;
+}
+header{
+    color: white;
+}
