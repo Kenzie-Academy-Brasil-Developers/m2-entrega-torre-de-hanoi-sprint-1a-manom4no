@@ -37,40 +37,88 @@ let liThree = document.createElement('li');
 liThree.setAttribute('class','liThree');
 liThree.setAttribute('id','disco4');
 liThree.addEventListener('click', takeDisc);
+let liFour = document.createElement('li');
+liFour.setAttribute('class','liFour');
+liFour.setAttribute('id','disco5');
+liFour.addEventListener('click', takeDisc);
 
+//contador
 
+let count=0
+
+//estrutura
 
 function towerCreation (){
     towerRodZero.appendChild(liZero);
     towerRodZero.appendChild(liOne);
     towerRodZero.appendChild(liTwo);
     towerRodZero.appendChild(liThree);
+
     towerContainer.appendChild(towerRodZero);
     towerContainer.appendChild(towerRodOne);
     towerContainer.appendChild(towerRodTwo);
     document.getElementById('tower').appendChild(towerContainer)
+    Count()
 }
 towerCreation()
 
-let count = 0;
+//pegar disco
+
 let take;
 function takeDisc(evt){
     let add = evt.currentTarget.closest('ul')
     take = add.lastElementChild
 }
 
+//depositar disco
+
 function deployDisc(evt){
     const repositoryDisc = evt.currentTarget.closest('ul')
-    if(repositoryDisc.childElementCount === 0){
+    //condição de movimento
+    if(repositoryDisc.childElementCount === 0 ||  repositoryDisc.lastElementChild.clientWidth > take.clientWidth){
         repositoryDisc.appendChild(take)
+        count++
+        Count()
     }
-    if(repositoryDisc.lastElementChild.clientWidth > take.clientWidth){
-        repositoryDisc.appendChild(take)
-    }
+    //condição de negação
     if(repositoryDisc.lastElementChild.clientWidth < take.clientWidth){
         alert('nao pode colocar o maior sobre o menor')
     }
+    //condição de vitória
     if(towerRodZero.childElementCount === 0 && towerRodOne.childElementCount === 0){
         document.getElementById('footer').style.display='flex';
-    }
+    }  
+}
+
+/*dificuldade*/
+function addShaoKhan(){
+    let buttonDificulty = document.getElementById('dificuldade');
+    buttonDificulty.setAttribute('class','buttonDificulty');
+    buttonDificulty.addEventListener('click',function(evt){
+        towerRodZero.appendChild(liFour);    
+        }
+    )
+}
+addShaoKhan()
+
+/*reset*/
+function reset(){
+    let buttonReset = document.getElementById('reset');
+    buttonReset.addEventListener('click',function(evt){
+        towerRodZero.appendChild(liZero);
+        towerRodZero.appendChild(liOne);
+        towerRodZero.appendChild(liTwo);
+        towerRodZero.appendChild(liThree);
+        document.getElementById('footer').style.display='none';
+        liFour.remove();
+        count=0;
+        Count()
+        }
+    )
+}
+reset()
+/*contador*/
+function Count(){
+    let result = document.getElementById('count');
+    result.innerText=count
 }
