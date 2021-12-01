@@ -1,0 +1,11 @@
+body{
+    background-image: url("towe/assets/midia/mortal-kombat-screen.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+    color: white;
+    text-align: end;
+    font-size: 30px;
+}
