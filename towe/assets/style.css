@@ -1,0 +1,140 @@
+body{
+    background-image: url('midia/Mortal-Kombat-Movie-Wallpaper-485x1024.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+h1{
+    color: white;
+}
+/*estrutura*/
+
+/*colunas*/
+.towerRodZero {
+    height: 300px;
+    width: 310px;
+    background-color: rgba(226, 226, 226, 0.521);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0px;
+    border-radius: 10px;
+    }
+.towerRodOne {
+    height: 300px;
+    width: 310px;
+    background-color: rgba(226, 226, 226, 0.521);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0px;
+    border-radius: 10px;
+    }
+.towerRodTwo {
+    height: 300px;
+    width: 310px;
+    background-color: rgba(226, 226, 226, 0.521);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0px;
+    border-radius: 10px;
+    }
+    /*linhas*/
+li{
+    list-style: none;
+    margin: 10px;
+    border-radius: 10px;
+    height: 30px;
+}
+.liZero{
+    width: 90%;
+    background-color: aqua;
+}
+.liOne{
+    width: 70%; 
+    background-color: rgb(0, 255, 42);
+}
+.liTwo{
+    width: 50%; 
+    background-color: rgb(111, 0, 255);
+}
+.liThree{
+    width: 30%; 
+    background-color: rgb(255, 0, 0);
+}
+.liFour{
+    width: 10%; 
+    background-color: rgb(229, 255, 0);
+}
+footer{
+    width: 320px;
+    position: absolute;
+    top:600px;
+    display: none;
+}
+footer img{
+    width: 100px;
+    }
+.sub-zero{
+    transform: rotateY(180deg);
+}
+
+@media screen and (min-width: 768px){
+    body{
+        background-image: url('midia/mk3-stage-temple.gif');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+    }
+    /*estrutura*/
+    .towerContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 100px;
+    }
+    /*game*/
+    .towerRodOne{
+        margin:0px 10px 0px 10px;
+    }
+    /*footer*/
+    .footer{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        display: none;
+        position: absolute;
+        top: 100px;
+    }
+    .scorpion,.sub-zero{
+        width: 300px;
+    }
+    .sub-zero{
+        transform: rotateY(180deg);
+    }
+    .fatality{
+        width: 700px;
+    }
+    /*header*/
+    header{
+        display: flex;
+        justify-content: space-around;
+        height: 5vw;
+    }
+    header{
+        color: white;
+    }
+}

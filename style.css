@@ -1,0 +1,23 @@
+body{
+    background-image: url('towe/assets/midia/phone.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+    text-align: end;
+    font-size: 30px;
+    }
+@media screen and (min-width: 768px){
+    body{
+        background-image: url("towe/assets/midia/mortal-kombat-screen.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+}
